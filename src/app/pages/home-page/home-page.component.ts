@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { IArticle } from 'src/app/interfaces/iarticle';
+import { ArticleService } from 'src/app/services/article.service';
 
 @Component({
   selector: 'home-page',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
+
+  articleService = inject(ArticleService)
+
+  arrArticles: IArticle[] = []
+
+  ngOnInit() {
+    this.arrArticles = this.articleService.getAll()
+  }
 
 }

@@ -1,9 +1,8 @@
 <div>
-    <article *ngFor="let article of arrArticles">
-        <h3>ARTICLE TITLE</h3>
-        <p>By: AUTHOR</p>
-        <p>Published: DATE</p>
-        <p>SUMMARY</p>
-
+    <article>
+        <h3>{{article.title}}</h3>
+        <p>By: {{article.author}}</p>
+        <p>Published: {{article.date_published}}</p>
+        <p>{{article.summary}}</p>
     </article>
 </div>
