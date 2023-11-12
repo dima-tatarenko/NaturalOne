@@ -1,0 +1,28 @@
+.home-articles article {
+    padding: 45px 30px;
+    background-color: rgba(224, 214, 214, 0.953);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.home-articles article h3 {
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+/* .home-articles img {
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+} */
+
+.frame {
+    height: 250px;
+    background: transparent no-repeat center;
+    background-size: cover;
+}

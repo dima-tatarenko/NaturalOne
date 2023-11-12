@@ -218,9 +218,7 @@ export class ArticleService {
   }
 
   getArticle(articleId: number) {
-    return this.arrArticles.find(article => {
-
-    })
+    return this.arrArticles.find(article => article.id === articleId)
   }
 
   addArticle(article: IArticle) {

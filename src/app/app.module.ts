@@ -11,6 +11,8 @@ import { FullArticleCardComponent } from './components/full-article-card/full-ar
 import { HomeArticleCardComponent } from './components/home-article-card/home-article-card.component';
 import { EditorNavComponent } from './components/editor-nav/editor-nav.component';
 import { ArticleFormComponent } from './pages/article-form/article-form.component';
+import { DndComponent } from './pages/dnd/dnd.component';
+import { ArticlePageComponent } from './pages/article-page/article-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ArticleFormComponent } from './pages/article-form/article-form.componen
     FullArticleCardComponent,
     HomeArticleCardComponent,
     EditorNavComponent,
-    ArticleFormComponent
+    ArticleFormComponent,
+    DndComponent,
+    ArticlePageComponent,
   ],
   imports: [
     BrowserModule,

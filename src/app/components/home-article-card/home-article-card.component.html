@@ -1,10 +1,11 @@
 <div class="home-articles">
     <article>
-        <figure class="frame" [ngStyle]="{'background-image': 'url('+ article.image +')'}"></figure>
+        <div (click)="readOnClick(article.id)" class="frame read-more"
+            [ngStyle]="{'background-image': 'url('+ article.image +')'}"></div>
         <h3>{{article.title}}</h3>
         <p class="align-right">By: {{article.author}} | Published: {{article.date_published}}</p>
         <p></p>
         <p class="article-overflow" [innerHTML]="article.text"></p>
-        <p>Read full article</p>
+        <p (click)="readOnClick(article.id)" class="read-more">Read full article</p>
     </article>
 </div>

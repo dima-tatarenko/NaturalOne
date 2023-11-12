@@ -34,3 +34,7 @@
     background: transparent no-repeat center;
     background-size: cover;
 }
+
+.read-more:hover {
+    cursor: pointer;
+}

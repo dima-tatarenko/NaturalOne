@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IArticle } from 'src/app/interfaces/iarticle';
 
 @Component({
   selector: 'full-article-card',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./full-article-card.component.css']
 })
 export class FullArticleCardComponent {
+
+  @Input() article!: IArticle | undefined
 
 }
