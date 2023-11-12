@@ -3,19 +3,18 @@ import { IArticle } from 'src/app/interfaces/iarticle';
 import { ArticleService } from 'src/app/services/article.service';
 
 @Component({
-  selector: 'home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  selector: 'pathfinder',
+  templateUrl: './pathfinder.component.html',
+  styleUrls: ['./pathfinder.component.css']
 })
-export class HomePageComponent {
+export class PathfinderComponent {
 
   articleService = inject(ArticleService)
 
   arrArticles: IArticle[] = []
 
   ngOnInit() {
-    this.arrArticles = this.articleService.getFront()
-    console.log(this.articleService.getFront())
+    this.arrArticles = this.articleService.getByCategory('pathfinder')
   }
 
 }

@@ -13,6 +13,8 @@ import { EditorNavComponent } from './components/editor-nav/editor-nav.component
 import { ArticleFormComponent } from './pages/article-form/article-form.component';
 import { DndComponent } from './pages/dnd/dnd.component';
 import { ArticlePageComponent } from './pages/article-page/article-page.component';
+import { PathfinderComponent } from './pages/pathfinder/pathfinder.component';
+import { CriticalRoleComponent } from './pages/critical-role/critical-role.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ArticlePageComponent } from './pages/article-page/article-page.componen
     ArticleFormComponent,
     DndComponent,
     ArticlePageComponent,
+    PathfinderComponent,
+    CriticalRoleComponent,
   ],
   imports: [
     BrowserModule,

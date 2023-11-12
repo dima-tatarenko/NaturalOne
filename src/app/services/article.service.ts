@@ -141,7 +141,7 @@ export class ArticleService {
       
       ` },
       {
-        id: 6, title: 'Critical Recap: Critical Role – The Mighty Nein: Echoes of the Solstice', author: 'Daniel Sloss', date_published: 'March 23rd, 2015', category: 'criticalrole', topic: 'story', image: 'https://images.squarespace-cdn.com/content/v1/58814a7abf629aeb03ec15b1/1547411289759-QMLAKQ7AQSP3LSYYJCZK/Megzilla87-All.jpg', text: `
+        id: 6, title: 'Critical Recap: Critical Role – The Mighty Nein: Echoes of the Solstice', author: 'Daniel Sloss', date_published: 'March 23rd, 2015', category: 'critical_role', topic: 'story', image: 'https://images.squarespace-cdn.com/content/v1/58814a7abf629aeb03ec15b1/1547411289759-QMLAKQ7AQSP3LSYYJCZK/Megzilla87-All.jpg', text: `
         <h5>EMPIRE SIBLINGS</h5>
 
         <p>It has been roughly 7 years since the Mighty Nein helped broker the peace that ended the War of Ash & Light, a war between the Dwendalian Empire and the Kryn Dynasty. The Mighty Nein have kept in contact over the years but have followed their own individual paths to the sea, to family, and to removing corrupt government officials. Beauregard Lionett, an Expositor of the Cobalt Soul, and Caleb Widogast, a powerful mage, followed the trail of Ludinus Da’leth to the Tishtan Excavation Site during the Apogee Solstice.</p>
@@ -209,110 +209,7 @@ export class ArticleService {
         <p>That is it for this special Critical Role one-shot!</p>
       
       ` },
-      {
-        id: 7, title: 'The Rules of Spellcasting', author: 'Jeremy Crawford', date_published: 'March 23rd, 2015', category: 'dnd', topic: 'info', image: 'https://images.ctfassets.net/swt2dsco9mfe/9LkRuIR6fI50Wp62IvTBS/c7acc5e562433751b25fbb047d27df93/2560x1600-zodiac.jpg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `
-        <p>The worlds of Dungeons & Dragons are filled with magic, and many characters and monsters wield that magic in the form of spells. This month’s installment of Sage Advice focuses on rules that govern the casting of those spells.</p>
 
-        <p>The following questions deal with rules from the Player’s Handbook, especially in chapters 9 and 10. You might want to have the book handy as you read!</p>
-        
-        <h5>Can a spell with an attack roll be used as the attack in the Attack action or as part of the Extra Attack feature?</h5>
-        The short answer is no.</h5>
-
-        <p>As explained in the Player’s Handbook, you can take one action on your turn in combat, in addition to moving. You choose your action from the options available to everyone—options such as Attack, Cast a Spell, and Dash—or you choose from among the special actions you’ve gained from a class, a feat, or another source.</p>
-
-        <p>If you want to cast a spell on your turn, you take the Cast a Spell action. Doing so means you’re not taking the Attack action or any other action. It is true that a number of spells, such as fire bolt and ray of frost, involve making an attack, but you can’t make such an attack without first casting the spell that delivers it. In other words, just because something involves an attack doesn’t mean the Attack action is being used.</p>
-
-        <p>By extension, the Extra Attack feature (given by several classes, including the fighter and paladin) doesn’t let you cast extra attack spells. That feature specifically relies on the Attack action, not the Cast a Spell action or any other action.</p>
-
-        <p>In summary, to make a spell attack, you have to first cast a spell or use a feature that creates the spell’s effect. A game feature, such as Extra Attack, that lets you make an attack doesn't let you cast a spell unless it says it does.</p>
-
-        <h5>Can you use a melee spell attack to make an opportunity attack?</h5>
-
-        <p>You can’t if the spell attack is created by casting a spell. When a creature triggers an opportunity attack from you, you can use your reaction to make a melee attack against it. The opportunity attack doesn’t suddenly give you the ability to cast a spell, such as shocking grasp.</p>
-
-        <p>Each spell has a casting time. A game feature, such as an opportunity attack, doesn’t let you bypass that casting time, unless the feature says otherwise. The War Caster feat is an example of a feature that does let you bypass a 1-action casting time to cast a spell in place of an opportunity attack.</p>
-
-        <p>A few monsters can make opportunity attacks with melee spell attacks. Here’s how: certain monsters—including the banshee, lich, and specter—have a melee spell attack that isn’t delivered by a spell. For example, the banshee’s Corrupting Touch action is a melee spell attack but no spell is cast to make it. The banshee can, therefore, make opportunity attacks with Corrupting Touch.</p>
-      
-      ` },
-      {
-        id: 8, title: 'The Rules of Spellcasting', author: 'Jeremy Crawford', date_published: 'March 23rd, 2015', category: 'dnd', topic: 'info', image: 'https://images.ctfassets.net/swt2dsco9mfe/9LkRuIR6fI50Wp62IvTBS/c7acc5e562433751b25fbb047d27df93/2560x1600-zodiac.jpg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `
-        <p>The worlds of Dungeons & Dragons are filled with magic, and many characters and monsters wield that magic in the form of spells. This month’s installment of Sage Advice focuses on rules that govern the casting of those spells.</p>
-
-        <p>The following questions deal with rules from the Player’s Handbook, especially in chapters 9 and 10. You might want to have the book handy as you read!</p>
-        
-        <h5>Can a spell with an attack roll be used as the attack in the Attack action or as part of the Extra Attack feature?</h5>
-        The short answer is no.</h5>
-
-        <p>As explained in the Player’s Handbook, you can take one action on your turn in combat, in addition to moving. You choose your action from the options available to everyone—options such as Attack, Cast a Spell, and Dash—or you choose from among the special actions you’ve gained from a class, a feat, or another source.</p>
-
-        <p>If you want to cast a spell on your turn, you take the Cast a Spell action. Doing so means you’re not taking the Attack action or any other action. It is true that a number of spells, such as fire bolt and ray of frost, involve making an attack, but you can’t make such an attack without first casting the spell that delivers it. In other words, just because something involves an attack doesn’t mean the Attack action is being used.</p>
-
-        <p>By extension, the Extra Attack feature (given by several classes, including the fighter and paladin) doesn’t let you cast extra attack spells. That feature specifically relies on the Attack action, not the Cast a Spell action or any other action.</p>
-
-        <p>In summary, to make a spell attack, you have to first cast a spell or use a feature that creates the spell’s effect. A game feature, such as Extra Attack, that lets you make an attack doesn't let you cast a spell unless it says it does.</p>
-
-        <h5>Can you use a melee spell attack to make an opportunity attack?</h5>
-
-        <p>You can’t if the spell attack is created by casting a spell. When a creature triggers an opportunity attack from you, you can use your reaction to make a melee attack against it. The opportunity attack doesn’t suddenly give you the ability to cast a spell, such as shocking grasp.</p>
-
-        <p>Each spell has a casting time. A game feature, such as an opportunity attack, doesn’t let you bypass that casting time, unless the feature says otherwise. The War Caster feat is an example of a feature that does let you bypass a 1-action casting time to cast a spell in place of an opportunity attack.</p>
-
-        <p>A few monsters can make opportunity attacks with melee spell attacks. Here’s how: certain monsters—including the banshee, lich, and specter—have a melee spell attack that isn’t delivered by a spell. For example, the banshee’s Corrupting Touch action is a melee spell attack but no spell is cast to make it. The banshee can, therefore, make opportunity attacks with Corrupting Touch.</p>
-      
-      ` },
-      {
-        id: 9, title: 'The Rules of Spellcasting', author: 'Jeremy Crawford', date_published: 'March 23rd, 2015', category: 'dnd', topic: 'info', image: 'https://images.ctfassets.net/swt2dsco9mfe/9LkRuIR6fI50Wp62IvTBS/c7acc5e562433751b25fbb047d27df93/2560x1600-zodiac.jpg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `
-        <p>The worlds of Dungeons & Dragons are filled with magic, and many characters and monsters wield that magic in the form of spells. This month’s installment of Sage Advice focuses on rules that govern the casting of those spells.</p>
-
-        <p>The following questions deal with rules from the Player’s Handbook, especially in chapters 9 and 10. You might want to have the book handy as you read!</p>
-        
-        <h5>Can a spell with an attack roll be used as the attack in the Attack action or as part of the Extra Attack feature?</h5>
-        The short answer is no.</h5>
-
-        <p>As explained in the Player’s Handbook, you can take one action on your turn in combat, in addition to moving. You choose your action from the options available to everyone—options such as Attack, Cast a Spell, and Dash—or you choose from among the special actions you’ve gained from a class, a feat, or another source.</p>
-
-        <p>If you want to cast a spell on your turn, you take the Cast a Spell action. Doing so means you’re not taking the Attack action or any other action. It is true that a number of spells, such as fire bolt and ray of frost, involve making an attack, but you can’t make such an attack without first casting the spell that delivers it. In other words, just because something involves an attack doesn’t mean the Attack action is being used.</p>
-
-        <p>By extension, the Extra Attack feature (given by several classes, including the fighter and paladin) doesn’t let you cast extra attack spells. That feature specifically relies on the Attack action, not the Cast a Spell action or any other action.</p>
-
-        <p>In summary, to make a spell attack, you have to first cast a spell or use a feature that creates the spell’s effect. A game feature, such as Extra Attack, that lets you make an attack doesn't let you cast a spell unless it says it does.</p>
-
-        <h5>Can you use a melee spell attack to make an opportunity attack?</h5>
-
-        <p>You can’t if the spell attack is created by casting a spell. When a creature triggers an opportunity attack from you, you can use your reaction to make a melee attack against it. The opportunity attack doesn’t suddenly give you the ability to cast a spell, such as shocking grasp.</p>
-
-        <p>Each spell has a casting time. A game feature, such as an opportunity attack, doesn’t let you bypass that casting time, unless the feature says otherwise. The War Caster feat is an example of a feature that does let you bypass a 1-action casting time to cast a spell in place of an opportunity attack.</p>
-
-        <p>A few monsters can make opportunity attacks with melee spell attacks. Here’s how: certain monsters—including the banshee, lich, and specter—have a melee spell attack that isn’t delivered by a spell. For example, the banshee’s Corrupting Touch action is a melee spell attack but no spell is cast to make it. The banshee can, therefore, make opportunity attacks with Corrupting Touch.</p>
-      
-      ` },
-      {
-        id: 10, title: 'The Rules of Spellcasting', author: 'Jeremy Crawford', date_published: 'March 23rd, 2015', category: 'dnd', topic: 'info', image: 'https://images.ctfassets.net/swt2dsco9mfe/9LkRuIR6fI50Wp62IvTBS/c7acc5e562433751b25fbb047d27df93/2560x1600-zodiac.jpg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `
-        <p>The worlds of Dungeons & Dragons are filled with magic, and many characters and monsters wield that magic in the form of spells. This month’s installment of Sage Advice focuses on rules that govern the casting of those spells.</p>
-
-        <p>The following questions deal with rules from the Player’s Handbook, especially in chapters 9 and 10. You might want to have the book handy as you read!</p>
-        
-        <h5>Can a spell with an attack roll be used as the attack in the Attack action or as part of the Extra Attack feature?</h5>
-        The short answer is no.</h5>
-
-        <p>As explained in the Player’s Handbook, you can take one action on your turn in combat, in addition to moving. You choose your action from the options available to everyone—options such as Attack, Cast a Spell, and Dash—or you choose from among the special actions you’ve gained from a class, a feat, or another source.</p>
-
-        <p>If you want to cast a spell on your turn, you take the Cast a Spell action. Doing so means you’re not taking the Attack action or any other action. It is true that a number of spells, such as fire bolt and ray of frost, involve making an attack, but you can’t make such an attack without first casting the spell that delivers it. In other words, just because something involves an attack doesn’t mean the Attack action is being used.</p>
-
-        <p>By extension, the Extra Attack feature (given by several classes, including the fighter and paladin) doesn’t let you cast extra attack spells. That feature specifically relies on the Attack action, not the Cast a Spell action or any other action.</p>
-
-        <p>In summary, to make a spell attack, you have to first cast a spell or use a feature that creates the spell’s effect. A game feature, such as Extra Attack, that lets you make an attack doesn't let you cast a spell unless it says it does.</p>
-
-        <h5>Can you use a melee spell attack to make an opportunity attack?</h5>
-
-        <p>You can’t if the spell attack is created by casting a spell. When a creature triggers an opportunity attack from you, you can use your reaction to make a melee attack against it. The opportunity attack doesn’t suddenly give you the ability to cast a spell, such as shocking grasp.</p>
-
-        <p>Each spell has a casting time. A game feature, such as an opportunity attack, doesn’t let you bypass that casting time, unless the feature says otherwise. The War Caster feat is an example of a feature that does let you bypass a 1-action casting time to cast a spell in place of an opportunity attack.</p>
-
-        <p>A few monsters can make opportunity attacks with melee spell attacks. Here’s how: certain monsters—including the banshee, lich, and specter—have a melee spell attack that isn’t delivered by a spell. For example, the banshee’s Corrupting Touch action is a melee spell attack but no spell is cast to make it. The banshee can, therefore, make opportunity attacks with Corrupting Touch.</p>
-      
-      ` },
 
 
       // id: string,
@@ -328,12 +225,29 @@ export class ArticleService {
     return this.arrArticles
   }
 
+  getFront() {
+    const dndArray: IArticle[] = this.getByCategory('dnd')
+    const pathfinderArray: IArticle[] = this.getByCategory('pathfinder')
+    const criticalRoleArray: IArticle[] = this.getByCategory('critical_role')
+    const frontArray: IArticle[] = []
+    frontArray.push(dndArray[0])
+    frontArray.push(pathfinderArray[0])
+    frontArray.push(criticalRoleArray[0])
+    frontArray.push(dndArray[1])
+    frontArray.push(pathfinderArray[1])
+    return frontArray
+  }
+
   getArticle(articleId: number) {
     return this.arrArticles.find(article => article.id === articleId)
   }
 
   addArticle(article: IArticle) {
     this.arrArticles.push(article)
+  }
+
+  getByCategory(category: string) {
+    return this.arrArticles.filter(article => article.category === category).reverse()
   }
 
 
