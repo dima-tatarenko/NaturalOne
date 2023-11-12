@@ -6,4 +6,5 @@ export interface IArticle {
     category: string,
     topic: string,
     text: string,
+    image: string,
 }

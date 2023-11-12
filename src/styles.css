@@ -16,13 +16,17 @@ body {
     color: black;
 }
 
-section {
-    padding: 30px 0px;
+.home-articles article p {
+    margin-top: 15px;
 }
 
-.bg-cover {
-    background-color: rgba(229, 229, 229, 0.923);
+.home-articles article p h5 {
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 15px;
 }
+
+
 
 /* https://www.pixground.com/pentakill-mordekaiser-karthus-yorick-skins-league-of-legends-4k-wallpaper/?download-img=2k */
 /* https://venturebeat.com/wp-content/uploads/2021/06/Dark-Alliance-beholder-boss.jpg?fit=2560%2C1440&strip=all */

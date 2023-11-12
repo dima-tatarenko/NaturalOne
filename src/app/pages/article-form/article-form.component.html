@@ -1,0 +1,47 @@
+<div class="container">
+    <form [formGroup]="newArticleForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" formControlName="title">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input type="text" class="form-control" formControlName="image">
+        </div>
+        <div class="mb-3">
+            <select name="" id="" formControlName="topic">
+                <option value="" selected>Choose a topic</option>
+                <option value="dnd">DnD</option>
+                <option value="pathfinder">Pathfinder</option>
+                <option value="criticalrole">Critical Role</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <select name="" id="" formControlName="category">
+                <option value="" selected>Choose a category</option>
+                <option value="update">Update</option>
+                <option value="info">Information</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Text</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" formControlName="text"></textarea>
+
+        </div>
+        <input type="submit" value="Send" class="btn btn-info">
+    </form>
+</div>
+<ul>
+    <li *ngFor="let oneError of errors">{{oneError.message}}</li>
+</ul>
+
+<!-- a
+id: number -> auto
+author: string -> auto
+date_published: string -> auto
+title: string,
+category: string,
+topic: string,
+text: string,
+image: string,
+a -->
