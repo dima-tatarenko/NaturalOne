@@ -1,0 +1,33 @@
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223, 199, 167, 0.953);
+    padding: 15px 0;
+}
+
+.main-nav img {
+    max-width: 100px;
+    margin-left: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: gainsboro;
+    font-weight: bold;
+    font-size: 125%;
+    transition: 1s;
+}
+
+.main-nav ul {
+    margin-right: 15px;
+}
+
+.main-nav li:hover {
+    color: white;
+    cursor: pointer;
+}

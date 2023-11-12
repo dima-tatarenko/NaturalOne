@@ -1,0 +1,11 @@
+.home-articles article {
+    padding: 45px 30px;
+}
+
+.article-overflow {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
