@@ -13,6 +13,7 @@ body {
     background-image: url('https://d2hu5nyotzx7z9.cloudfront.net/Ultrawide/WhitestoneWC_ultrawide_1440p.png');
     background-size: auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: black;
 }
 
