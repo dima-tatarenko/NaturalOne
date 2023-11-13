@@ -1,39 +1,50 @@
 <div class="container">
     <form [formGroup]="newArticleForm" (ngSubmit)="onSubmit()">
-        <div class="mb-3">
-            <label class="form-label">Title</label>
-            <input type="text" class="form-control" formControlName="title">
+        <div class="submit-button">
+            <input type="submit" value="Submit article" class="btn btn-info mt-4">
         </div>
-        <div class="mb-3">
-            <label class="form-label">Image</label>
-            <input type="text" class="form-control" formControlName="image">
+        <div class="form-title">
+            <label class="form-label"></label>
+            <input type="text" class="form-control" formControlName="title" placeholder="Title">
         </div>
-        <div class="mb-3">
-            <select name="" id="" formControlName="topic">
-                <option value="" selected>Choose a category</option>
-                <option value="update">Update</option>
-                <option value="info">Information</option>
-            </select>
+
+        <div class="row">
+            <div class="form-group col-3">
+                <label> </label>
+                <select class="form-control" formControlName="category">
+                    <option value="category" selected>Category</option>
+                    <option value="dnd">DnD</option>
+                    <option value="pathfinder">Pathfinder</option>
+                    <option value="critical_role">Critical Role</option>
+                </select>
+            </div>
+            <div class="form-group col-3">
+                <label> </label>
+                <select class="form-control" formControlName="topic">
+                    <option value="topic" selected>Topic</option>
+                    <option value="update">Update</option>
+                    <option value="info">Information</option>
+                </select>
+            </div>
+            <div class="form-group col-6">
+                <label class="form-label"></label>
+                <input type="text" class="form-control" formControlName="image" placeholder="Image url">
+            </div>
+
         </div>
-        <div class="mb-3">
-            <select name="" id="" formControlName="category">
-                <option value="" selected>Choose a topic</option>
-                <option value="dnd">DnD</option>
-                <option value="pathfinder">Pathfinder</option>
-                <option value="critical_role">Critical Role</option>
-            </select>
-        </div>
-        <div class="mb-3">
+        <!-- <div class="mb-3">
             <label class="form-label">Text</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" formControlName="text"></textarea>
 
+        </div> -->
+        <div class="card mt-4">
+            <p-editor formControlName="text" [style]="{ height: '520px' }"></p-editor>
         </div>
-        <input type="submit" value="Send" class="btn btn-info">
+        <div class="submit-button">
+            <input type="submit" value="Submit article" class="btn btn-info mt-4 mb-4">
+        </div>
     </form>
 </div>
-<ul>
-    <li *ngFor="let oneError of errors">{{oneError.message}}</li>
-</ul>
 
 <!-- a
 id: number -> auto

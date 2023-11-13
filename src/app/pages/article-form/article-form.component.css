@@ -1,0 +1,26 @@
+/* form {
+    margin-top: 40px;
+}
+
+form input {
+    background-color: rgba(224, 214, 214, 0.95);
+    border-color: gray;
+}
+
+p-editor {
+    background-color: rgba(224, 214, 214, 0.95);
+    border-color: gray;
+} */
+
+.submit-button {
+    text-align: center;
+}
+
+input.btn {
+    font-size: 130%;
+    width: 100%;
+    background-color: rgb(189, 90, 178);
+    border-color: black;
+    color: white;
+    font-weight: bold;
+}

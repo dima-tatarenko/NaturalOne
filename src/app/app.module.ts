@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditorModule } from 'primeng/editor';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,6 +36,7 @@ import { CriticalRoleComponent } from './pages/critical-role/critical-role.compo
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    EditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
