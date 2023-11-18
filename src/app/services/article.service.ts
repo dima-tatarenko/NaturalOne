@@ -8,12 +8,16 @@ export class ArticleService {
 
   arrArticles: IArticle[]
 
+  private articleCounter: number = 6
+
+
   // What happens when I want to submit articles to different service
   // Callback on 4 diff functions (?)
 
   // Article topics can be: info, story, update
 
   constructor() {
+
     this.arrArticles = [
       {
         id: 1, title: 'What is an Owlbear?', author: 'Michael Karr', date_published: 'December 2, 2022', category: 'dnd', topic: 'info', image: 'https://media.wizards.com/2022/dnd/images/dnd_owlbear.jpg', text: `Owlbears are a classic monster in Dungeons & Dragons lore. They’re basically what you’d expect after crossing a giant owl with a bear—just as cute and twice as deadly. They come in a variety of forms, from the snowy owlbear to the skeletal owlbear and two-headed owlbear found in the Infernal Machine Rebuild adventure. Although owlbears are a commonly encountered creature, little is known about their origins and nature. Yet, they can be a fun addition to your D&D game. 
@@ -221,6 +225,10 @@ export class ArticleService {
     ]
   }
 
+  countId() {
+    return this.articleCounter
+  }
+
   getAll() {
     return this.arrArticles
   }
@@ -250,5 +258,18 @@ export class ArticleService {
     return this.arrArticles.filter(article => article.category === category).reverse()
   }
 
+  getAllCategories() {
+    const categoryArray = new Set(this.arrArticles.map(article => article.category))
+    return categoryArray
+  }
+
+  loadLocalArticles() {
+    this.arrArticles = JSON.parse(localStorage.getItem('arrLocalArticles')!)
+  }
+
+  updateCounter() {
+    this.articleCounter = this.arrArticles[this.arrArticles.length - 1].id
+    console.log(this.articleCounter)
+  }
 
 }

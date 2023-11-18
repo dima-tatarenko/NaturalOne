@@ -14,8 +14,14 @@ export class HomePageComponent {
   arrArticles: IArticle[] = []
 
   ngOnInit() {
+    if (localStorage.getItem('arrLocalArticles')) {
+      this.articleService.loadLocalArticles()
+      this.articleService.updateCounter()
+    }
+
     this.arrArticles = this.articleService.getFront()
     console.log(this.articleService.getFront())
+    console.log(JSON.parse(localStorage.getItem('arrLocalArticles')!))
   }
 
 }

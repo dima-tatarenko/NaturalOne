@@ -13,8 +13,7 @@ export class MainNavComponent {
   userService = inject(UserService)
 
   onLogout() {
-    localStorage.removeItem('writer_token')
-    localStorage.removeItem('user_token')
+    localStorage.clear()
     this.router.navigate(['/home'])
   }
 
