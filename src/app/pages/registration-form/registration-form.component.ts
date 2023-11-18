@@ -21,7 +21,7 @@ export class RegistrationFormComponent {
       email: new FormControl('dima@gmail.com', []),
       password: new FormControl('1234', []),
       password_repeat: new FormControl('1234', []),
-      acc_token: new FormControl('potato', []),
+      acc_token: new FormControl(null, []),
     }
     )
   }

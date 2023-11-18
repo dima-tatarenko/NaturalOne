@@ -8,11 +8,12 @@ import { PathfinderComponent } from './pages/pathfinder/pathfinder.component';
 import { CriticalRoleComponent } from './pages/critical-role/critical-role.component';
 import { LoginFormComponent } from './pages/login-form/login-form.component';
 import { RegistrationFormComponent } from './pages/registration-form/registration-form.component';
+import { writerGuard } from './guards/writer.guard';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'home', component: HomePageComponent },
-  { path: 'post', component: ArticleFormComponent },
+  { path: 'post', component: ArticleFormComponent, canActivate: [writerGuard] },
   { path: 'dnd', component: DndComponent },
   { path: 'pathfinder', component: PathfinderComponent },
   { path: 'critical_role', component: CriticalRoleComponent },
