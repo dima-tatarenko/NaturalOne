@@ -16,12 +16,25 @@ export class UserService {
     ]
   }
 
-  addUser() {
+  getAll() {
+    return this.arrUsers
+  }
 
+  addUser(user: IUser) {
+    this.arrUsers.push(user)
 
     // Check that this doesn't apply on failed registration attempt
     this.userCounter++
+    console.log(this.arrUsers)
+    console.log(this.userCounter)
   }
+
+  fetchId() {
+    return this.userCounter
+  }
+
+  isLogged(): boolean { return localStorage.getItem('user_token') ? true : false }
+  writerLogged(): boolean { return localStorage.getItem('writer_token') ? true : false }
 
 
 
