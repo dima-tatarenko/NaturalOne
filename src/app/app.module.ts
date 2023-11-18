@@ -17,6 +17,8 @@ import { DndComponent } from './pages/dnd/dnd.component';
 import { ArticlePageComponent } from './pages/article-page/article-page.component';
 import { PathfinderComponent } from './pages/pathfinder/pathfinder.component';
 import { CriticalRoleComponent } from './pages/critical-role/critical-role.component';
+import { RegistrationFormComponent } from './pages/registration-form/registration-form.component';
+import { LoginFormComponent } from './pages/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { CriticalRoleComponent } from './pages/critical-role/critical-role.compo
     ArticlePageComponent,
     PathfinderComponent,
     CriticalRoleComponent,
+    RegistrationFormComponent,
+    LoginFormComponent,
   ],
   imports: [
     BrowserModule,
