@@ -22,6 +22,7 @@ export class HomePageComponent {
     this.arrArticles = this.articleService.getFront()
     console.log(this.articleService.getFront())
     console.log(JSON.parse(localStorage.getItem('arrLocalArticles')!))
+    console.log(JSON.parse(localStorage.getItem('writer_name')!))
   }
 
 }

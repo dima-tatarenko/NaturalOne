@@ -15,10 +15,10 @@ export class LoginFormComponent {
 
   arrUsers: IUser[] = []
 
-  newUserForm: FormGroup
+  loginUserForm: FormGroup
 
   constructor() {
-    this.newUserForm = new FormGroup({
+    this.loginUserForm = new FormGroup({
       acc_name: new FormControl('jcrow', []),
       password: new FormControl('1234', []),
     }
@@ -32,10 +32,11 @@ export class LoginFormComponent {
 
   onSubmit() {
     for (let user of this.arrUsers) {
-      if (user.acc_name == this.newUserForm.value.acc_name && user.password === this.newUserForm.value.password) {
+      if (user.acc_name == this.loginUserForm.value.acc_name && user.password === this.loginUserForm.value.password) {
         if (user.acc_level === 'writer') {
           localStorage.setItem('writer_token', 'writer')
           localStorage.setItem('user_token', 'user')
+          localStorage.setItem('writer_name', JSON.stringify((user.first_name) + ' ' + (user.last_name)))
           console.log(localStorage.getItem('writer_token'))
         } else {
           localStorage.setItem('user_token', 'user')

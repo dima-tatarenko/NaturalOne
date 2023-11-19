@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
 import { ArticleService } from 'src/app/services/article.service';
@@ -46,12 +47,15 @@ export class ArticleFormComponent {
     // this.formLogin.value.id = 'otra id';
 
     this.newArticleForm.value.id = (this.articleService.countId()) + 1
+    this.newArticleForm.value.date_published = new DatePipe('en-US').transform(new Date(), 'MM/dd/YYYY')
+    this.newArticleForm.value.author = JSON.parse(localStorage.getItem('writer_name')!)
+
 
     if (!this.newArticleForm.valid) return
 
-    console.log(this.newArticleForm.value)
+
     this.articleService.addArticle(this.newArticleForm.value)
-    console.log(this.articleService.getAll())
+
 
 
     localStorage.setItem('arrLocalArticles', JSON.stringify(this.articleService.getAll()))
