@@ -1,0 +1,23 @@
+.login-form {
+    background-color: var(--background-contrast-color);
+    border-radius: 15px;
+    margin-top: 30px
+}
+
+.column-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.column-flex label {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.column-flex>div {
+    width: 50%;
+}

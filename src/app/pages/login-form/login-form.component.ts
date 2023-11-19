@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IUser } from 'src/app/interfaces/iuser';
-import { ArticleService } from 'src/app/services/article.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -12,6 +12,7 @@ import { UserService } from 'src/app/services/user.service';
 export class LoginFormComponent {
 
   userService = inject(UserService)
+  router = inject(Router)
 
   arrUsers: IUser[] = []
 
@@ -19,8 +20,10 @@ export class LoginFormComponent {
 
   constructor() {
     this.loginUserForm = new FormGroup({
-      acc_name: new FormControl('jcrow', []),
-      password: new FormControl('1234', []),
+      acc_name: new FormControl('', [
+        this.userValidator.bind(this)
+      ]),
+      password: new FormControl('', []),
     }
     )
   }
@@ -38,19 +41,42 @@ export class LoginFormComponent {
           localStorage.setItem('user_token', 'user')
           localStorage.setItem('writer_name', JSON.stringify((user.first_name) + ' ' + (user.last_name)))
           console.log(localStorage.getItem('writer_token'))
+          this.router.navigate(['/home'])
         } else {
           localStorage.setItem('user_token', 'user')
           console.log(localStorage.getItem('user_token'))
+          this.router.navigate(['/home'])
         }
 
       }
     }
-
-
     // this.formLogin.value.id = 'otra id';
     // const nuevoObj = { ...this.formLogin.value, id: 'otra id' };
+  }
 
+  userValidator(control: AbstractControl) {
+    const value = control.value
 
+    let userExists = false
+
+    for (let user of this.arrUsers) {
+      if (user.acc_name === value) {
+        userExists = true
+        break
+      }
+    }
+
+    if (userExists) {
+      this.arrUsers = this.userService.getAll()
+      return null
+    } else {
+      return { uservalidator: true }
+    }
+
+  }
+
+  checkError(controlName: string, errorName: string) {
+    return this.loginUserForm.get(controlName)?.hasError(errorName) && this.loginUserForm.get(controlName)?.touched
   }
 
 }

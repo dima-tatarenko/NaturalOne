@@ -22,20 +22,20 @@ export class RegistrationFormComponent {
 
     this.newUserForm = new FormGroup({
 
-      first_name: new FormControl('Dima', [
+      first_name: new FormControl('', [
         Validators.required, Validators.minLength(2), Validators.maxLength(15)
       ]),
-      last_name: new FormControl('Tatarenko', [
+      last_name: new FormControl('', [
         Validators.required, Validators.minLength(2), Validators.maxLength(15)
       ]),
       acc_name: new FormControl('', [
         Validators.required, Validators.minLength(4), Validators.maxLength(15), this.userValidator.bind(this),
       ]),
-      email: new FormControl('dima@gmail.com', [
+      email: new FormControl('', [
         Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)
       ]),
-      password: new FormControl('1234', []),
-      password_repeat: new FormControl('1234', []),
+      password: new FormControl('', []),
+      password_repeat: new FormControl('', []),
       acc_token: new FormControl(null, []),
     }
     )

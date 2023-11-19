@@ -1,17 +1,36 @@
-<div class="container">
+<div class="container login-form">
     <form [formGroup]="loginUserForm" (ngSubmit)="onSubmit()">
-        <div class="row">
-            <div class="form-group col-6 col-12-sm">
-                <label class="form-label"></label>
+        <div class="column-flex">
+            <div class="form-group">
+                <label class="form-label">Account name</label>
                 <input type="text" class="form-control" formControlName="acc_name" placeholder="Account name">
+                <p class="error" *ngIf="checkError('acc_name', 'uservalidator')">
+                    User doesn't exist.
+                </p>
             </div>
-            <div class="form-group col-6 col-12-sm">
-                <label class="form-label"></label>
-                <input type="text" class="form-control" formControlName="password" placeholder="Password">
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" formControlName="password" placeholder="Password">
             </div>
         </div>
-        <div class="submit-button">
+        <div class="submit-button column-flex">
             <input type="submit" value="Login" class="btn btn-info mt-4 mb-4">
+        </div>
+        <div class="testing">
+            <h3>For testing purposes</h3>
+            <p>Only writers can post. Duh...</p>
+            <div class="test-flex">
+                <div>
+                    <p>Level: writer</p>
+                    <p>Acc name: jcrow</p>
+                    <p>Password: 1234</p>
+                </div>
+                <div>
+                    <p>Level: user</p>
+                    <p>Acc name: ppradera</p>
+                    <p>Password: 1234</p>
+                </div>
+            </div>
         </div>
     </form>
 </div>

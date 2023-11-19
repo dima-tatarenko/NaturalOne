@@ -18,21 +18,19 @@
     margin-top: 10px;
 }
 
-
-
 .main-nav ul li {
     display: inline-block;
     margin-right: 30px;
     padding: 5px 15px;
     border-radius: 10px;
-    background-color: rgb(189, 90, 178);
-    color: white;
+    background-color: var(--highlight-color);
+    color: var(--contrast-font-color);
     font-weight: bold;
-    font-size: 120%;
+    font-size: 125%;
     transition: .5s;
 }
 
-.main-nav li:hover {
-    color: rgb(175, 66, 128);
+.main-nav ul li:hover {
+    background-color: var(--highlight-color-hover);
     cursor: pointer;
 }

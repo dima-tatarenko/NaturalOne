@@ -3,6 +3,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-contrast-color: rgba(224, 214, 214, 0.95);
+    --main-font-color: black;
+    --contrast-font-color: rgb(255, 255, 255);
+    --highlight-color: rgb(189, 90, 134);
+    --highlight-color-hover: rgb(170, 55, 107);
+}
+
+/* rgb(189, 90, 178) rgb(189, 90, 134)-> brighter pink */
+
 img {
     display: block;
     width: 100%;
@@ -14,7 +24,7 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: black;
+    color: var(--main-font-color);
 }
 
 .home-articles article p {
@@ -27,7 +37,50 @@ body {
     margin-top: 15px;
 }
 
+.btn-info {
+    background-color: var(--highlight-color);
+    color: var(--contrast-font-color);
+    border: none;
+    padding: 8px 30px;
+}
 
+.btn-info:hover {
+    background-color: var(--highlight-color-hover);
+    color: var(--contrast-font-color)
+}
+
+p.error {
+    color: red;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.testing {
+    padding: 25px 0px;
+}
+
+.testing h3 {
+    text-align: center;
+}
+
+.testing p {
+    text-align: center;
+}
+
+.test-flex {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+.test-flex>div {
+    width: 25%;
+}
 
 
 

@@ -8,7 +8,7 @@ export class ArticleService {
 
   arrArticles: IArticle[]
 
-  private articleCounter: number = 6
+  private articleCounter: number = 7
 
 
   // What happens when I want to submit articles to different service
@@ -20,7 +20,7 @@ export class ArticleService {
 
     this.arrArticles = [
       {
-        id: 1, title: 'What is an Owlbear?', author: 'Michael Karr', date_published: '12/02/2022', category: 'dnd', topic: 'info', image: 'https://media.wizards.com/2022/dnd/images/dnd_owlbear.jpg', text: `Owlbears are a classic monster in Dungeons & Dragons lore. They’re basically what you’d expect after crossing a giant owl with a bear—just as cute and twice as deadly. They come in a variety of forms, from the snowy owlbear to the skeletal owlbear and two-headed owlbear found in the Infernal Machine Rebuild adventure. Although owlbears are a commonly encountered creature, little is known about their origins and nature. Yet, they can be a fun addition to your D&D game. 
+        id: 1, title: 'What is an Owlbear?', author: 'Michael Karr', date_published: '12/02/2021', category: 'dnd', topic: 'info', image: 'https://media.wizards.com/2022/dnd/images/dnd_owlbear.jpg', text: `Owlbears are a classic monster in Dungeons & Dragons lore. They’re basically what you’d expect after crossing a giant owl with a bear—just as cute and twice as deadly. They come in a variety of forms, from the snowy owlbear to the skeletal owlbear and two-headed owlbear found in the Infernal Machine Rebuild adventure. Although owlbears are a commonly encountered creature, little is known about their origins and nature. Yet, they can be a fun addition to your D&D game. 
         <h5>Where Do Owlbears Come From?</h5> 
         <p>No one truly knows where owlbears came from. Some say that owlbears are the result of a twisted wizard’s experiments. Others may tell you that they have long seen owlbears in the Feywild. In either event, owlbears are now found throughout forested regions of the Forgotten Realms, D&D’s most popular setting. They are known to live in caves or ruins, where they sleep on beds made of the gnawed bones of their prey. Owlbears occasionally travel together in mated pairs. However, these pairs last only so long as their offspring are young and defenseless, as most of the owlbear’s 20-year lifespan is spent alone.</p>
       
@@ -52,10 +52,10 @@ export class ArticleService {
       `,
       },
       {
-        id: 2, title: 'Welcome to the Party, D&D Beyond!', author: 'DnD Team', date_published: '04/13/2022', category: 'dnd', topic: 'update', image: 'https://images.ctfassets.net/swt2dsco9mfe/D3gTBfMesQvLPbnamKbFd/8e993119706963d40e6f77f77b9a46ad/MM_2560x1600.jpeg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `Dungeons & Dragons levels up by acquiring the popular digital toolset. Dungeons & Dragons and D&D Beyond have always felt like a part of the same family. That’s why we are excited to welcome everyone at D&D Beyond to formally join us at Wizards of the Coast, bringing together two teams dedicated to continuing to make Dungeons & Dragons easy to run and accessible to all! It’s amazing what D&D Beyond has accomplished since its humble beginnings in 2017, and the D&D team has truly leveled up with this acquisition. With over 10 million users, millions of characters created, and millions of campaigns played, the team of 80 passionate creators across US and Europe have brought so much joy to D&D players around the world, including helping friends and family come together to play through a global pandemic. You’re probably wondering what kind of change might happen as a result of these two teams coming together, so let’s make this clear: we have no plans to stop supporting D&D Beyond. The purchases you’ve made, the characters you’ve created, and the campaigns you’ve run aren’t going anywhere. This is an exciting time for all of us, and growing our team means great things to come. If there’s one thing the D&D and D&D Beyond teams have in common, it’s a desire to continue making your experience playing the World’s Greatest Roleplaying game even better. We’ll have more to share with you later this year, so hone those Perception checks and warm up your dice (digital and otherwise). In the meantime, join us in giving a hearty welcome to D&D Beyond into the Dungeons & Dragons family. Welcome to the party, pals!`,
+        id: 2, title: 'Welcome to the Party, D&D Beyond!', author: 'Jeremy Crawford', date_published: '04/13/2022', category: 'dnd', topic: 'update', image: 'https://images.ctfassets.net/swt2dsco9mfe/D3gTBfMesQvLPbnamKbFd/8e993119706963d40e6f77f77b9a46ad/MM_2560x1600.jpeg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `Dungeons & Dragons levels up by acquiring the popular digital toolset. Dungeons & Dragons and D&D Beyond have always felt like a part of the same family. That’s why we are excited to welcome everyone at D&D Beyond to formally join us at Wizards of the Coast, bringing together two teams dedicated to continuing to make Dungeons & Dragons easy to run and accessible to all! It’s amazing what D&D Beyond has accomplished since its humble beginnings in 2017, and the D&D team has truly leveled up with this acquisition. With over 10 million users, millions of characters created, and millions of campaigns played, the team of 80 passionate creators across US and Europe have brought so much joy to D&D players around the world, including helping friends and family come together to play through a global pandemic. You’re probably wondering what kind of change might happen as a result of these two teams coming together, so let’s make this clear: we have no plans to stop supporting D&D Beyond. The purchases you’ve made, the characters you’ve created, and the campaigns you’ve run aren’t going anywhere. This is an exciting time for all of us, and growing our team means great things to come. If there’s one thing the D&D and D&D Beyond teams have in common, it’s a desire to continue making your experience playing the World’s Greatest Roleplaying game even better. We’ll have more to share with you later this year, so hone those Perception checks and warm up your dice (digital and otherwise). In the meantime, join us in giving a hearty welcome to D&D Beyond into the Dungeons & Dragons family. Welcome to the party, pals!`,
       },
       {
-        id: 3, title: 'The Rules of Spellcasting', author: 'Jeremy Crawford', date_published: '03/23/2015', category: 'dnd', topic: 'info', image: 'https://images.ctfassets.net/swt2dsco9mfe/9LkRuIR6fI50Wp62IvTBS/c7acc5e562433751b25fbb047d27df93/2560x1600-zodiac.jpg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `
+        id: 3, title: 'The Rules of Spellcasting', author: 'Jeremy Crawford', date_published: '03/23/2023', category: 'dnd', topic: 'info', image: 'https://images.ctfassets.net/swt2dsco9mfe/9LkRuIR6fI50Wp62IvTBS/c7acc5e562433751b25fbb047d27df93/2560x1600-zodiac.jpg?q=70&fit=thumb&w=2560&h=1600&fm=avif', text: `
         <p>The worlds of Dungeons & Dragons are filled with magic, and many characters and monsters wield that magic in the form of spells. This month’s installment of Sage Advice focuses on rules that govern the casting of those spells.</p>
 
         <p>The following questions deal with rules from the Player’s Handbook, especially in chapters 9 and 10. You might want to have the book handy as you read!</p>
@@ -81,7 +81,7 @@ export class ArticleService {
       
       ` },
       {
-        id: 4, title: 'Orcs, Dromaar, and More!', author: 'Michael Sayre', date_published: '11/07/2023', category: 'pathfinder', topic: 'info', image: 'https://fc00.deviantart.net/fs71/f/2012/203/3/2/orc_shaman_by_markmolchan-d5874kg.jpg', text: `
+        id: 4, title: 'Orcs, Dromaar, and More!', author: 'Michael Sayre', date_published: '09/07/2023', category: 'pathfinder', topic: 'info', image: 'https://fc00.deviantart.net/fs71/f/2012/203/3/2/orc_shaman_by_markmolchan-d5874kg.jpg', text: `
         <p>As we cruise into the final days before the release, we’re getting to the end of these preview blogs, but we figured there’s probably still a few things we can talk about. How about orcs and the updated mixed ancestry rules?</p>
 
         <p>Orcs are a common ancestry now, and appear among the Player Core options alongside dwarves, goblins, elves, humans, etc. This reflects not just a mechanical change, but also the ever-evolving state of our lore. With the undead hordes of the Whispering Tyrant seething outwards from the Gravelands, the orcs of Belkzen have seen their home transformed into one of the primary battlegrounds, raising their axes and torches high to fend off the encroaching darkness.</p>
@@ -102,7 +102,7 @@ export class ArticleService {
       
       ` },
       {
-        id: 5, title: 'Iconic Encounter: Ties of Shadow ', author: 'Andrew Mullen', date_published: '10/31/2023', category: 'pathfinder', topic: 'story', image: 'https://cdn.paizo.com/a7d62ac8-7f03-00ef-f1f0-83fb8bf332e2/0059e85c-a486-42f9-9c4d-72abf8c4ad25/PZO2121_equipmentopener_FiratSolhan_2000x1600.png', text: `
+        id: 5, title: 'Iconic Encounter: Ties of Shadow ', author: 'Andrew Mullen', date_published: '11/12/2023', category: 'pathfinder', topic: 'story', image: 'https://cdn.paizo.com/a7d62ac8-7f03-00ef-f1f0-83fb8bf332e2/0059e85c-a486-42f9-9c4d-72abf8c4ad25/PZO2121_equipmentopener_FiratSolhan_2000x1600.png', text: `
         <p>“Can you at least tell me what it does?”
 
         <p>Lem frowned down at the talisman. Feiya had just handed him a cord of braided sinew hung with scraps of fabric and a small yellowed fang.</p>
@@ -213,15 +213,31 @@ export class ArticleService {
         <p>That is it for this special Critical Role one-shot!</p>
       
       ` },
+      {
+        id: 7, title: 'The Legend of Vox Machina will satisfy people who have no idea what Critical Role is', author: 'Matthew Razak', date_published: '01/26/2022', category: 'critical_role', topic: 'info', image: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8642101cece661111dbabfdc38762dbad90f63983f85a83667c0a5fa12cab50e._RI_TTW_.jpg', text: `
+        <p>I have a confession. Tabletop gaming is my nerd blind spot. I suppose we all have our own blind spots in nerdom, but I always felt like I should have at least tried out a Dungeons & Dragons campaign once or maybe just watched more than 10 seconds of a game going on at MAGFest one year. I haven’t, though, so I pretty much know the bare minimum someone who writes for a site like The Escapist should know. That is all to say that I am coming with especially fresh eyes to review Amazon’s new animated series The Legend of Vox Machina, the show based on the first campaign of the wildly popular tabletop gaming series Critical Role. We got screeners for the first six episodes, and I came into it blinder than a balhannoth on a stormy night. (That’s a D&D character that Google tells me is blind.)</p>
+
+        <p>However, the reality is probably that the majority of people know little to nothing about tabletop gaming, so I can discuss whether The Legend of Vox Machina is watchable for people like me, who exist outside of a niche fanbase.</p>
 
 
+        <p>So first, for those of you who don’t know what Critical Role is and are too lazy to go to their FAQ page, here are the basics: The web series is a live-streamed RPG game put on by a collection of voice actors. Their first campaign was a massive success, and they’ve gone on to grow into a sizeable content juggernaut on the internet and are now on their third campaign, all based in the land of Exandria. The name Vox Machina means “voice machine” and is a nod to the fact that everyone participating is a voice actor.</p>
 
-      // id: string,
-      // title: string,
-      // author: string,
-      // date_published: string,
-      // category: string,
-      // topic: string,
+        <p>In 2019 Critical Role launched a Kickstarter campaign to create a 22-minute animated special based on the Vox Machina campaign. It did more than well, breaking Kickstarter records for Film & Video and raising $11.3 million dollars. That kind of money allowed them to expand the special into a 10-episode season and also attracted the attention of bigger fish. Amazon swooped in and picked the series up, ordering another 14 episodes of the show. Now it is set to premiere on January 28 on Amazon Prime.</p>
+
+
+        <p>The series kicks off with a two-part story about an evil dragon attacking the kingdom, using this as an intro to the Vox Machina team, all of whom have their own unique fantasy powers. That team is composed of Pike Trickfoot, the Gnome Cleric (Ashley Johnson); Keyleth, the Half-Elf Druid (Marisha Ray); Percival “Percy” Fredrickstein Von Musel Klossowski de Rolo III, the Human Gunslinger (Taliesin Jaffe); Grog Strongjaw, the Goliath Barbarian (Travis Willingham); Scanlan Shorthalt, the Gnome Bard (Sam Riegel); Vex’ahlia, the Half-Elf Ranger (Laura Bailey); and Vax’ildan, the Half-Elf Rogue (Liam O’Brien). All those voice actors are from Critical Role, and there hasn’t been any recasting. After those two episodes, the series starts rolling into a bigger storyline, focusing on Percy and his past while delving into the other characters more as well.</p>
+
+        <p>While you’re sure to get more out of The Legend of Vox Machina having been a fan of Critical Role or knowledgeable of tabletop gaming, none of that is required. The first two episodes do a perfect job of laying out the show’s dynamic and pulling you into all the characters. It’s clear that these two were definitely conceived as the “pilot” Kickstarter episodes, and they function exactly like that, giving hints at bigger stories to come.</p>
+
+        <p>It also helps that, for the most part, these characters are fantasy tropes built on the game that helped create fantasy tropes. The strong guy is kind of dumb, and he’s friends with the virtuous little cleric. The gunslinger is a loner and the mystical woods elf controls plants. On the surface, these characters are easy to recognize and understand, so newcomers will do exactly that. Thankfully, there’s more to the series underneath that surface, making it both easy to follow The Legend of Vox Machina and also easy to get hooked on it. Despite a robust cast and 30-ish-minute runtimes for each episode, the show never seems like it’s shortchanging any of its characters, pulling you into each of their stories.</p>
+
+
+        <p>The passion for this world and its origins really comes through in these first six episodes and is what makes it so addicting. This show was clearly put together by people who care about this story. The violence, comedy, and cliche all feel like a natural part of the narrative, not something shoved in. These characters don’t feel like a punchline despite the presence of humor; they feel real. Obviously, retaining the voice actors from the original show helps this, and it gives the series a feeling that, even if you don’t know its history, you can be part of it. It also helps that the animation is strong, the action is well done, and the violence is ratcheted up to 20.</p>
+
+
+        <p>So, for those of you who just scrolled down to the bottom to get the literal bottom line — yes, this show delivers, whether or not you are an existing fan. Its animation looks stunning, the lore is unfolded skillfully without ever making you feel lost, it’s tropey enough to be comfortable but unique enough to not feel tired, and, most importantly, there’s a love and passion to it that is key to pulling in a new audience. The Legend of Vox Machina works because the people behind it clearly care about it, and it is something that can be enjoyed by people ranging from the most die-hard fans to the Flumphiest of Flumphs (again, Google).</p>
+      
+      ` },
     ]
   }
 
@@ -243,6 +259,7 @@ export class ArticleService {
     frontArray.push(criticalRoleArray[0])
     frontArray.push(dndArray[1])
     frontArray.push(pathfinderArray[1])
+    frontArray.push(criticalRoleArray[1])
     return frontArray
   }
 
@@ -258,10 +275,10 @@ export class ArticleService {
     return this.arrArticles.filter(article => article.category === category).reverse()
   }
 
-  getAllCategories() {
-    const categoryArray = new Set(this.arrArticles.map(article => article.category))
-    return categoryArray
-  }
+  // getAllCategories() {
+  //   const categoryArray = new Set(this.arrArticles.map(article => article.category))
+  //   return categoryArray
+  // }
 
   loadLocalArticles() {
     this.arrArticles = JSON.parse(localStorage.getItem('arrLocalArticles')!)
