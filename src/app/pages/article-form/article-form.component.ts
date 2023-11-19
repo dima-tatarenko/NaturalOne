@@ -1,6 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, AbstractControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ArticleService } from 'src/app/services/article.service';
 
 
@@ -14,8 +15,7 @@ type ErrorObj = { field: string, message: string }
 export class ArticleFormComponent {
 
   articleService = inject(ArticleService)
-
-  errors: ErrorObj[] = []
+  router = inject(Router)
 
   newArticleForm: FormGroup
 
@@ -59,6 +59,7 @@ export class ArticleFormComponent {
 
 
     localStorage.setItem('arrLocalArticles', JSON.stringify(this.articleService.getAll()))
+    this.router.navigate(['/home'])
 
     // let newArray = JSON.parse(localStorage.getItem('arrLocalArticles')!)
   }
